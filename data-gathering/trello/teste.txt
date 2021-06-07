@@ -1,0 +1,264 @@
+ ----- Fetch data about trello board -----
+https://api.trello.com/1/boards/60bbbe49a7dc5a872b65fb75/lists
+
+ Trello board lists:
+
+- List name TODO : List id 60bbbe620a0a9e10afbe7346
+- List name DOING : List id 60bbbe64ea28651427205ed2
+- List name DONE : List id 60bbbe662b86de773f89d32d
+
+ The list TODO has this cards: 
+     - CARD_TODO: 60bbcc004906b841a52c07ac
+
+https://api.trello.com/1/cards/60bbcc004906b841a52c07ac/actions
+{
+    "appCreator": null,
+    "data": {
+        "board": {
+            "id": "60bbbe49a7dc5a872b65fb75",
+            "name": "board",
+            "shortLink": "9kyJHNy6"
+        },
+        "card": {
+            "id": "60bbcc004906b841a52c07ac",
+            "idShort": 1,
+            "name": "CARD_TODO",
+            "shortLink": "VON4CjnV"
+        },
+        "list": {
+            "id": "60bbbe620a0a9e10afbe7346",
+            "name": "TODO"
+        },
+        "text": "Este \u00e9 um registro de atividade do card"
+    },
+    "date": "2021-06-05T22:32:00.239Z",
+    "id": "60bbfb6060cc9f68731b58b8",
+    "idMemberCreator": "57c6cff19cc4be0ef5a06626",
+    "limits": {
+        "reactions": {
+            "perAction": {
+                "disableAt": 1000,
+                "status": "ok",
+                "warnAt": 900
+            },
+            "uniquePerAction": {
+                "disableAt": 17,
+                "status": "ok",
+                "warnAt": 16
+            }
+        }
+    },
+    "memberCreator": {
+        "activityBlocked": false,
+        "avatarHash": "b44ff2a95dfa69fb857d9e1330a3deae",
+        "avatarUrl": "https://trello-members.s3.amazonaws.com/57c6cff19cc4be0ef5a06626/b44ff2a95dfa69fb857d9e1330a3deae",
+        "fullName": "Tiago Vallinoto",
+        "id": "57c6cff19cc4be0ef5a06626",
+        "idMemberReferrer": null,
+        "initials": "TV",
+        "nonPublic": {},
+        "nonPublicAvailable": true,
+        "username": "vallinoto"
+    },
+    "type": "commentCard"
+}
+ The list DOING has this cards: 
+     - CARD_DOING: 60bbcc067e99044146d4bc7c
+
+https://api.trello.com/1/cards/60bbcc067e99044146d4bc7c/actions
+{
+    "appCreator": null,
+    "data": {
+        "board": {
+            "id": "60bbbe49a7dc5a872b65fb75",
+            "name": "board",
+            "shortLink": "9kyJHNy6"
+        },
+        "card": {
+            "id": "60bbcc067e99044146d4bc7c",
+            "idList": "60bbbe64ea28651427205ed2",
+            "idShort": 2,
+            "name": "CARD_DOING",
+            "shortLink": "ZEVVmkqs"
+        },
+        "listAfter": {
+            "id": "60bbbe64ea28651427205ed2",
+            "name": "DOING"
+        },
+        "listBefore": {
+            "id": "60bbbe662b86de773f89d32d",
+            "name": "DONE"
+        },
+        "old": {
+            "idList": "60bbbe662b86de773f89d32d"
+        }
+    },
+    "date": "2021-06-05T23:15:31.046Z",
+    "id": "60bc0593affcdf037e4726b7",
+    "idMemberCreator": "57c6cff19cc4be0ef5a06626",
+    "limits": {},
+    "memberCreator": {
+        "activityBlocked": false,
+        "avatarHash": "b44ff2a95dfa69fb857d9e1330a3deae",
+        "avatarUrl": "https://trello-members.s3.amazonaws.com/57c6cff19cc4be0ef5a06626/b44ff2a95dfa69fb857d9e1330a3deae",
+        "fullName": "Tiago Vallinoto",
+        "id": "57c6cff19cc4be0ef5a06626",
+        "idMemberReferrer": null,
+        "initials": "TV",
+        "nonPublic": {},
+        "nonPublicAvailable": true,
+        "username": "vallinoto"
+    },
+    "type": "updateCard"
+}
+{
+    "appCreator": null,
+    "data": {
+        "board": {
+            "id": "60bbbe49a7dc5a872b65fb75",
+            "name": "board",
+            "shortLink": "9kyJHNy6"
+        },
+        "card": {
+            "id": "60bbcc067e99044146d4bc7c",
+            "idList": "60bbbe662b86de773f89d32d",
+            "idShort": 2,
+            "name": "CARD_DOING",
+            "shortLink": "ZEVVmkqs"
+        },
+        "listAfter": {
+            "id": "60bbbe662b86de773f89d32d",
+            "name": "DONE"
+        },
+        "listBefore": {
+            "id": "60bbbe64ea28651427205ed2",
+            "name": "DOING"
+        },
+        "old": {
+            "idList": "60bbbe64ea28651427205ed2"
+        }
+    },
+    "date": "2021-06-05T22:36:17.287Z",
+    "id": "60bbfc615ebefc17f8969852",
+    "idMemberCreator": "57c6cff19cc4be0ef5a06626",
+    "limits": {},
+    "memberCreator": {
+        "activityBlocked": false,
+        "avatarHash": "b44ff2a95dfa69fb857d9e1330a3deae",
+        "avatarUrl": "https://trello-members.s3.amazonaws.com/57c6cff19cc4be0ef5a06626/b44ff2a95dfa69fb857d9e1330a3deae",
+        "fullName": "Tiago Vallinoto",
+        "id": "57c6cff19cc4be0ef5a06626",
+        "idMemberReferrer": null,
+        "initials": "TV",
+        "nonPublic": {},
+        "nonPublicAvailable": true,
+        "username": "vallinoto"
+    },
+    "type": "updateCard"
+}
+{
+    "appCreator": null,
+    "data": {
+        "board": {
+            "id": "60bbbe49a7dc5a872b65fb75",
+            "name": "board",
+            "shortLink": "9kyJHNy6"
+        },
+        "card": {
+            "id": "60bbcc067e99044146d4bc7c",
+            "idShort": 2,
+            "name": "CARD_DOING",
+            "shortLink": "ZEVVmkqs"
+        },
+        "list": {
+            "id": "60bbbe64ea28651427205ed2",
+            "name": "DOING"
+        },
+        "text": "Este \u00e9 um outro registro do card"
+    },
+    "date": "2021-06-05T22:32:19.432Z",
+    "id": "60bbfb733e0ca00c1b4538c7",
+    "idMemberCreator": "57c6cff19cc4be0ef5a06626",
+    "limits": {
+        "reactions": {
+            "perAction": {
+                "disableAt": 1000,
+                "status": "ok",
+                "warnAt": 900
+            },
+            "uniquePerAction": {
+                "disableAt": 17,
+                "status": "ok",
+                "warnAt": 16
+            }
+        }
+    },
+    "memberCreator": {
+        "activityBlocked": false,
+        "avatarHash": "b44ff2a95dfa69fb857d9e1330a3deae",
+        "avatarUrl": "https://trello-members.s3.amazonaws.com/57c6cff19cc4be0ef5a06626/b44ff2a95dfa69fb857d9e1330a3deae",
+        "fullName": "Tiago Vallinoto",
+        "id": "57c6cff19cc4be0ef5a06626",
+        "idMemberReferrer": null,
+        "initials": "TV",
+        "nonPublic": {},
+        "nonPublicAvailable": true,
+        "username": "vallinoto"
+    },
+    "type": "commentCard"
+}
+ The list DONE has this cards: 
+     - CARD_DONE: 60bbcc0b6997317b4206d324
+
+https://api.trello.com/1/cards/60bbcc0b6997317b4206d324/actions
+{
+    "appCreator": null,
+    "data": {
+        "board": {
+            "id": "60bbbe49a7dc5a872b65fb75",
+            "name": "board",
+            "shortLink": "9kyJHNy6"
+        },
+        "card": {
+            "id": "60bbcc0b6997317b4206d324",
+            "idShort": 3,
+            "name": "CARD_DONE",
+            "shortLink": "E9aW0OIU"
+        },
+        "list": {
+            "id": "60bbbe662b86de773f89d32d",
+            "name": "DONE"
+        },
+        "text": "Este \u00e9 mais outro"
+    },
+    "date": "2021-06-05T22:32:32.459Z",
+    "id": "60bbfb8043e0d65b52a69ed8",
+    "idMemberCreator": "57c6cff19cc4be0ef5a06626",
+    "limits": {
+        "reactions": {
+            "perAction": {
+                "disableAt": 1000,
+                "status": "ok",
+                "warnAt": 900
+            },
+            "uniquePerAction": {
+                "disableAt": 17,
+                "status": "ok",
+                "warnAt": 16
+            }
+        }
+    },
+    "memberCreator": {
+        "activityBlocked": false,
+        "avatarHash": "b44ff2a95dfa69fb857d9e1330a3deae",
+        "avatarUrl": "https://trello-members.s3.amazonaws.com/57c6cff19cc4be0ef5a06626/b44ff2a95dfa69fb857d9e1330a3deae",
+        "fullName": "Tiago Vallinoto",
+        "id": "57c6cff19cc4be0ef5a06626",
+        "idMemberReferrer": null,
+        "initials": "TV",
+        "nonPublic": {},
+        "nonPublicAvailable": true,
+        "username": "vallinoto"
+    },
+    "type": "commentCard"
+}

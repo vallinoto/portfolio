@@ -1,0 +1,139 @@
+2021-06-05 20:39:18,413:root:INFO:[>>>>>>>>>>>>>>>>>>>> trello: Iniciando...]
+2021-06-05 20:39:18,451:urllib3.connectionpool:DEBUG:Starting new HTTPS connection (1): api.trello.com:443
+2021-06-05 20:39:18,998:urllib3.connectionpool:DEBUG:https://api.trello.com:443 "GET /1/boards/60bbbe49a7dc5a872b65fb75/lists?key=f58789ac686428e7e03ea0020455d382&token=e3244c44878dadefb3acf8ab1399edbb36a65e996a4bc3c4f9235ebf258d6f6b HTTP/1.1" 200 None
+2021-06-05 20:39:19,006:urllib3.connectionpool:DEBUG:Starting new HTTPS connection (1): api.trello.com:443
+2021-06-05 20:39:19,613:urllib3.connectionpool:DEBUG:https://api.trello.com:443 "GET /1/lists/60bbbe620a0a9e10afbe7346/cards?key=f58789ac686428e7e03ea0020455d382&token=e3244c44878dadefb3acf8ab1399edbb36a65e996a4bc3c4f9235ebf258d6f6b HTTP/1.1" 200 None
+2021-06-05 20:39:19,621:urllib3.connectionpool:DEBUG:Starting new HTTPS connection (1): api.trello.com:443
+2021-06-05 20:39:20,228:urllib3.connectionpool:DEBUG:https://api.trello.com:443 "GET /1/cards/60bbcc004906b841a52c07ac/actions?key=f58789ac686428e7e03ea0020455d382&token=e3244c44878dadefb3acf8ab1399edbb36a65e996a4bc3c4f9235ebf258d6f6b HTTP/1.1" 200 None
+2021-06-05 20:39:20,236:urllib3.connectionpool:DEBUG:Starting new HTTPS connection (1): api.trello.com:443
+2021-06-05 20:39:20,845:urllib3.connectionpool:DEBUG:https://api.trello.com:443 "GET /1/lists/60bbbe64ea28651427205ed2/cards?key=f58789ac686428e7e03ea0020455d382&token=e3244c44878dadefb3acf8ab1399edbb36a65e996a4bc3c4f9235ebf258d6f6b HTTP/1.1" 200 None
+2021-06-05 20:39:20,852:urllib3.connectionpool:DEBUG:Starting new HTTPS connection (1): api.trello.com:443
+2021-06-05 20:39:21,462:urllib3.connectionpool:DEBUG:https://api.trello.com:443 "GET /1/cards/60bbcc067e99044146d4bc7c/actions?key=f58789ac686428e7e03ea0020455d382&token=e3244c44878dadefb3acf8ab1399edbb36a65e996a4bc3c4f9235ebf258d6f6b HTTP/1.1" 200 None
+2021-06-05 20:39:21,471:urllib3.connectionpool:DEBUG:Starting new HTTPS connection (1): api.trello.com:443
+2021-06-05 20:39:22,071:urllib3.connectionpool:DEBUG:https://api.trello.com:443 "GET /1/lists/60bbbe662b86de773f89d32d/cards?key=f58789ac686428e7e03ea0020455d382&token=e3244c44878dadefb3acf8ab1399edbb36a65e996a4bc3c4f9235ebf258d6f6b HTTP/1.1" 200 None
+2021-06-05 20:39:22,080:urllib3.connectionpool:DEBUG:Starting new HTTPS connection (1): api.trello.com:443
+2021-06-05 20:39:22,682:urllib3.connectionpool:DEBUG:https://api.trello.com:443 "GET /1/cards/60bbcc0b6997317b4206d324/actions?key=f58789ac686428e7e03ea0020455d382&token=e3244c44878dadefb3acf8ab1399edbb36a65e996a4bc3c4f9235ebf258d6f6b HTTP/1.1" 200 None
+2021-06-05 20:39:23,513:root:ERROR:Protocol not known: {
+    "appCreator": null,
+    "data": {
+        "board": {
+            "id": "60bbbe49a7dc5a872b65fb75",
+            "name": "board",
+            "shortLink": "9kyJHNy6"
+        },
+        "card": {
+            "id": "60bbcc0b6997317b4206d324",
+            "idShort": 3,
+            "name": "CARD_DONE",
+            "shortLink": "E9aW0OIU"
+        },
+        "list": {
+            "id": "60bbbe662b86de773f89d32d",
+            "name": "DONE"
+        },
+        "text": "Este \u00e9 mais outro"
+    },
+    "date": "2021-06-05T22:32:32.459Z",
+    "id": "60bbfb8043e0d65b52a69ed8",
+    "idMemberCreator": "57c6cff19cc4be0ef5a06626",
+    "limits": {
+        "reactions": {
+            "perAction": {
+                "disableAt": 1000,
+                "status": "ok",
+                "warnAt": 900
+            },
+            "uniquePerAction": {
+                "disableAt": 17,
+                "status": "ok",
+                "warnAt": 16
+            }
+        }
+    },
+    "memberCreator": {
+        "activityBlocked": false,
+        "avatarHash": "b44ff2a95dfa69fb857d9e1330a3deae",
+        "avatarUrl": "https
+Traceback (most recent call last):
+  File "/Users/vallinoto/gitrepos/portfolio/data-gathering/trello/trello.py", line 48, in main
+    dados = pd.read_json(json.dumps(action, sort_keys=True, indent=4, separators=(",", ": ")))
+  File "/Users/vallinoto/opt/anaconda3/lib/python3.8/site-packages/pandas/util/_decorators.py", line 199, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vallinoto/opt/anaconda3/lib/python3.8/site-packages/pandas/util/_decorators.py", line 299, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vallinoto/opt/anaconda3/lib/python3.8/site-packages/pandas/io/json/_json.py", line 540, in read_json
+    json_reader = JsonReader(
+  File "/Users/vallinoto/opt/anaconda3/lib/python3.8/site-packages/pandas/io/json/_json.py", line 622, in __init__
+    data = self._get_data_from_filepath(filepath_or_buffer)
+  File "/Users/vallinoto/opt/anaconda3/lib/python3.8/site-packages/pandas/io/json/_json.py", line 659, in _get_data_from_filepath
+    self.handles = get_handle(
+  File "/Users/vallinoto/opt/anaconda3/lib/python3.8/site-packages/pandas/io/common.py", line 558, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/Users/vallinoto/opt/anaconda3/lib/python3.8/site-packages/pandas/io/common.py", line 333, in _get_filepath_or_buffer
+    file_obj = fsspec.open(
+  File "/Users/vallinoto/opt/anaconda3/lib/python3.8/site-packages/fsspec/core.py", line 428, in open
+    return open_files(
+  File "/Users/vallinoto/opt/anaconda3/lib/python3.8/site-packages/fsspec/core.py", line 280, in open_files
+    fs, fs_token, paths = get_fs_token_paths(
+  File "/Users/vallinoto/opt/anaconda3/lib/python3.8/site-packages/fsspec/core.py", line 598, in get_fs_token_paths
+    cls = get_filesystem_class(protocol)
+  File "/Users/vallinoto/opt/anaconda3/lib/python3.8/site-packages/fsspec/registry.py", line 208, in get_filesystem_class
+    raise ValueError("Protocol not known: %s" % protocol)
+ValueError: Protocol not known: {
+    "appCreator": null,
+    "data": {
+        "board": {
+            "id": "60bbbe49a7dc5a872b65fb75",
+            "name": "board",
+            "shortLink": "9kyJHNy6"
+        },
+        "card": {
+            "id": "60bbcc0b6997317b4206d324",
+            "idShort": 3,
+            "name": "CARD_DONE",
+            "shortLink": "E9aW0OIU"
+        },
+        "list": {
+            "id": "60bbbe662b86de773f89d32d",
+            "name": "DONE"
+        },
+        "text": "Este \u00e9 mais outro"
+    },
+    "date": "2021-06-05T22:32:32.459Z",
+    "id": "60bbfb8043e0d65b52a69ed8",
+    "idMemberCreator": "57c6cff19cc4be0ef5a06626",
+    "limits": {
+        "reactions": {
+            "perAction": {
+                "disableAt": 1000,
+                "status": "ok",
+                "warnAt": 900
+            },
+            "uniquePerAction": {
+                "disableAt": 17,
+                "status": "ok",
+                "warnAt": 16
+            }
+        }
+    },
+    "memberCreator": {
+        "activityBlocked": false,
+        "avatarHash": "b44ff2a95dfa69fb857d9e1330a3deae",
+        "avatarUrl": "https
+2021-06-05 20:39:23,518:root:INFO:[>>>>>>>>>>>>>>>>>>>> trello: Fim.]
+2021-06-05 20:42:57,371:root:INFO:[>>>>>>>>>>>>>>>>>>>> trello: Iniciando...]
+2021-06-05 20:42:57,413:urllib3.connectionpool:DEBUG:Starting new HTTPS connection (1): api.trello.com:443
+2021-06-05 20:42:58,017:urllib3.connectionpool:DEBUG:https://api.trello.com:443 "GET /1/boards/60bbbe49a7dc5a872b65fb75/lists?key=f58789ac686428e7e03ea0020455d382&token=e3244c44878dadefb3acf8ab1399edbb36a65e996a4bc3c4f9235ebf258d6f6b HTTP/1.1" 200 None
+2021-06-05 20:42:58,025:urllib3.connectionpool:DEBUG:Starting new HTTPS connection (1): api.trello.com:443
+2021-06-05 20:42:58,632:urllib3.connectionpool:DEBUG:https://api.trello.com:443 "GET /1/lists/60bbbe620a0a9e10afbe7346/cards?key=f58789ac686428e7e03ea0020455d382&token=e3244c44878dadefb3acf8ab1399edbb36a65e996a4bc3c4f9235ebf258d6f6b HTTP/1.1" 200 None
+2021-06-05 20:42:58,641:urllib3.connectionpool:DEBUG:Starting new HTTPS connection (1): api.trello.com:443
+2021-06-05 20:42:59,253:urllib3.connectionpool:DEBUG:https://api.trello.com:443 "GET /1/cards/60bbcc004906b841a52c07ac/actions?key=f58789ac686428e7e03ea0020455d382&token=e3244c44878dadefb3acf8ab1399edbb36a65e996a4bc3c4f9235ebf258d6f6b HTTP/1.1" 200 None
+2021-06-05 20:42:59,261:urllib3.connectionpool:DEBUG:Starting new HTTPS connection (1): api.trello.com:443
+2021-06-05 20:42:59,861:urllib3.connectionpool:DEBUG:https://api.trello.com:443 "GET /1/lists/60bbbe64ea28651427205ed2/cards?key=f58789ac686428e7e03ea0020455d382&token=e3244c44878dadefb3acf8ab1399edbb36a65e996a4bc3c4f9235ebf258d6f6b HTTP/1.1" 200 None
+2021-06-05 20:42:59,868:urllib3.connectionpool:DEBUG:Starting new HTTPS connection (1): api.trello.com:443
+2021-06-05 20:43:00,479:urllib3.connectionpool:DEBUG:https://api.trello.com:443 "GET /1/cards/60bbcc067e99044146d4bc7c/actions?key=f58789ac686428e7e03ea0020455d382&token=e3244c44878dadefb3acf8ab1399edbb36a65e996a4bc3c4f9235ebf258d6f6b HTTP/1.1" 200 None
+2021-06-05 20:43:00,490:urllib3.connectionpool:DEBUG:Starting new HTTPS connection (1): api.trello.com:443
+2021-06-05 20:43:01,092:urllib3.connectionpool:DEBUG:https://api.trello.com:443 "GET /1/lists/60bbbe662b86de773f89d32d/cards?key=f58789ac686428e7e03ea0020455d382&token=e3244c44878dadefb3acf8ab1399edbb36a65e996a4bc3c4f9235ebf258d6f6b HTTP/1.1" 200 None
+2021-06-05 20:43:01,100:urllib3.connectionpool:DEBUG:Starting new HTTPS connection (1): api.trello.com:443
+2021-06-05 20:43:01,705:urllib3.connectionpool:DEBUG:https://api.trello.com:443 "GET /1/cards/60bbcc0b6997317b4206d324/actions?key=f58789ac686428e7e03ea0020455d382&token=e3244c44878dadefb3acf8ab1399edbb36a65e996a4bc3c4f9235ebf258d6f6b HTTP/1.1" 200 None
+2021-06-05 20:43:01,710:root:INFO:[>>>>>>>>>>>>>>>>>>>> trello: Fim.]
