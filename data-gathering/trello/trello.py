@@ -6,6 +6,9 @@ import json
 import modules.collect as c
 import pandas as pd
 
+with open('config.json') as config_file:
+    config = json.load(config_file)
+
 
 BOARD_ID='60bbbe49a7dc5a872b65fb75'
 URL_BOARD_LIST='https://api.trello.com/1/boards/' + BOARD_ID + '/lists'
@@ -15,8 +18,8 @@ URL_ACTIONS = "https://api.trello.com/1/cards/"
 URL_ACTIONS_SUFIXE = "/actions"
 
 QUERY = {
-   'key': 'f58789ac686428e7e03ea0020455d382',
-   'token': 'e3244c44878dadefb3acf8ab1399edbb36a65e996a4bc3c4f9235ebf258d6f6b'
+   'key': config['key'],
+   'token': config['token']
 }
 HEADERS = {
    "Accept": "application/json"
