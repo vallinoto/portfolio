@@ -6,6 +6,7 @@ import json
 import modules.collect as c
 import pandas as pd
 
+
 with open('config.json') as config_file:
     config = json.load(config_file)
 
@@ -65,5 +66,3 @@ if __name__ == '__main__':
     main()
 
 #print('Card "{}"" foi criado em: {}'.format(card['name'], utc_creation_time))
-
-
