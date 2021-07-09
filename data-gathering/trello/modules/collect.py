@@ -5,7 +5,7 @@
 
 import requests
 import json
-import pytz
+# import pytz
 from datetime import datetime
 
 

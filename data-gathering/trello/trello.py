@@ -5,6 +5,7 @@ import logging
 import json
 import modules.collect as c
 import pandas as pd
+from io import StringIO
 
 
 with open('config.json') as config_file:
@@ -28,30 +29,45 @@ HEADERS = {
 
 
 def main():
+
    try:
-      print(' ----- Fetch data about trello board -----')
-      print(URL_BOARD_LIST)
-      print('')
+      # print(' ----- Fetch data about trello board -----')
+      # print(URL_BOARD_LIST)
+      # print('')
       lists = c.fetch_trello_api(URL_BOARD_LIST, HEADERS, QUERY)
 
-      print(' Trello board lists:\n')
-      for list in lists:
-         print('- List name {} : List id {}'.format(list['name'], list['id']))
-      print('')
+      # print(' Trello board lists:\n')
+      # for list in lists:
+      #    print('- List name {} : List id {}'.format(list['name'], list['id']))
+
+      # print('')
+   
+      dados = []
 
       for list in lists:
-         print(' The list {} has this cards: '.format(list['name']))
+         # print(' The list {} has this cards: '.format(list['name']))
          cards = c.fetch_trello_api(URL_CARDS_IN_LIST_BASE + list['id'] + URL_CARDS_IN_LIST_SUFIXE, HEADERS, QUERY)
 
          for card in cards:
-            print('     - {}: {}\n'.format(card['name'], card['id']))
+            # print('     - {}: {}\n'.format(card['name'], card['id']))
             actions = c.fetch_trello_api(URL_ACTIONS + card['id']+ URL_ACTIONS_SUFIXE, HEADERS, QUERY)
-            print(URL_ACTIONS + card['id']+ URL_ACTIONS_SUFIXE)
+            # print(URL_ACTIONS + card['id']+ URL_ACTIONS_SUFIXE)
             
             for action in actions:
-               print(json.dumps(action, sort_keys=True, indent=4, separators=(",", ": ")))
-               dados = json.dumps(action, sort_keys=True, indent=4, separators=(",", ": "))
-      print(type(dados))
+               
+               # print(json.dumps(action, sort_keys=True, indent=4, separators=(",", ": ")))
+               dados.append((action))
+      
+
+      dicio = dict(dados[0])
+      for k,v in dicio.items():
+         if k == "data":
+            dados_cartao = dict(v)
+         else:
+            continue
+
+         for k1, v1 in dados_cartao.items():
+            print(k1, " - ", v1)
 
    except Exception as e:
       logging.exception(e)
